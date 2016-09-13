@@ -1,0 +1,39 @@
+body {
+  font-family: 'Slabo 27px', serif;
+}
+h1 {
+  margin: 100px;
+}
+.navbar {
+  background: #410000;
+}
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a:hover {
+  background: #230000;
+}
+.navbar .navbar-toggle {
+  border-color: #230000;
+  padding-top: 4px;
+}
+.navbar .navbar-toggle:active {
+  background: #230000;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background: #230000;
+}
+.navbar-collapse {
+  border: none;
+}
+.navbar-inverse {
+  border-color: #ffffff;
+}
+.content {
+  margin-top: 60px;
+}
+.btn-default {
+  background: #902B2B;
+}
+.btn-default:hover {
+  background: #650F0F;
+}

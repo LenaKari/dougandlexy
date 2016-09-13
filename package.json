@@ -6,7 +6,7 @@
     "dev": "webpack --progress --watch",
     "build": "webpack --progress",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "webpack-dev-server --progress --inline --hot --content-base build --history-api-fallback",
+    "start:dev": "webpack-dev-server --progress --inline --hot --content-base . --history-api-fallback",
     "start:prod": "webpack --watch --progress && node server.js"
   },
   "dependencies": {
