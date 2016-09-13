@@ -1,0 +1,47 @@
+@import "variables";
+
+body {
+  font-family: 'Slabo 27px', serif;
+}
+
+h1 {
+  margin: 100px;
+}
+
+.navbar {
+  background: @main-red;
+  .navbar-nav {
+    li {
+      a:focus, a:hover {
+        background: @dark-red;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: @dark-red;
+    padding-top: 4px;
+  }
+  .navbar-toggle:active { background: @dark-red; }
+  .navbar-toggle:hover, .navbar-toggle:focus {
+    background: @dark-red;
+  }
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-inverse {
+  border-color: @white;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.btn-default {
+  background: @lightest-red;
+  &:hover {
+    background: @light-red;
+  }
+}
