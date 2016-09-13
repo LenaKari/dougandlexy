@@ -37,3 +37,18 @@ h1 {
 .btn-default:hover {
   background: #650F0F;
 }
+textarea {
+  resize: none;
+}
+iframe {
+  width: 60%;
+  height: 300px;
+}
+.hotel-info {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+}
+.gmap {
+  text-align: center;
+}
