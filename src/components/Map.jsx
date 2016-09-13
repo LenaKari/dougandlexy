@@ -9,7 +9,7 @@ export default class Map extends React.Component {
           <p>Website: <a href="http://www.beechwoodhotel.com" target="_blank">beechwoodhotel.com</a><br/>Phone: (508) 754-5789</p>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAxrbFPGGhD6btCIgjZmvKOVsf6k8ppJHk &q=363+Plantation+St+Worcester+MA+01605"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAxrbFPGGhD6btCIgjZmvKOVsf6k8ppJHk &q=363+Plantation+St+Worcester+MA+01605&zoom=15"
           allowFullScreen>
         </iframe>
       </div>
