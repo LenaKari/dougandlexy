@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Row, Col, Jumbotron } from 'react-bootstrap'
-import Title from './Title'
 import Map from './Map'
 
 export default class Details extends React.Component {
@@ -14,12 +13,14 @@ export default class Details extends React.Component {
     return (
       <Grid>
         <Row>
-          <Jumbotron>
+          <div class="title-banner">
             <h2>Details</h2>
-          </Jumbotron>
+          </div>
         </Row>
         <Row>
-          <Map />
+          <Jumbotron>
+            <Map />
+          </Jumbotron>
         </Row>
       </Grid>
     );

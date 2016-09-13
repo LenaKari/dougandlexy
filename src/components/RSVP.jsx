@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Row, Col, Jumbotron } from 'react-bootstrap'
-import Title from './Title'
 
 export default class RSVP extends React.Component {
 	constructor(props) {
@@ -15,8 +14,10 @@ export default class RSVP extends React.Component {
       <Grid>
         <Row>
           <Col>
-            <Jumbotron>
+            <div class="title-banner">
               <h2>RSVP</h2>
+            </div>
+            <Jumbotron>
               <form method="post" action="rsvp.php">
                 <div class="form-group">
                   <label for="nameInput">Your Name</label>
