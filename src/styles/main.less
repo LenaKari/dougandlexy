@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Slabo 27px', serif;
+  min-width: 320px;
 }
 
 h1 {
@@ -51,14 +52,18 @@ textarea {
 }
 
 iframe {
-  width: 60%;
   height: 300px;
 }
 
 .hotel-info {
   text-align: left;
-  width: 60%;
   margin: auto;
+}
+
+.hotel-info, iframe {
+  width: 60%;
+  @media(max-width: 400px) { width: 90%; }
+  @media(max-width: 600px) { width: 80%; }
 }
 
 .gmap {
