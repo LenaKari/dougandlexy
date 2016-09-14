@@ -18,16 +18,16 @@ export default class Home extends React.Component {
           <Jumbotron>
             <Carousel>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/src/img/1.jpg"/>
+                <img src="/src/img/1.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/src/img/2.jpg"/>
+                <img src="/src/img/2.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/src/img/3.jpg"/>
+                <img src="/src/img/3.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/src/img/4.jpg"/>
+                <img src="/src/img/4.jpg"/>
               </Carousel.Item>
             </Carousel>
           </Jumbotron>

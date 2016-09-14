@@ -32,6 +32,8 @@ h1 {
 .content {
   margin-top: 60px;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .btn-default {
   background: #902B2B;
@@ -43,13 +45,33 @@ h1 {
 .title-banner {
   font-family: 'Dancing Script', cursive;
 }
+@media (max-width: 767px) {
+  .main-banner,
+  .title-banner {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 550px) {
+  .main-banner,
+  .title-banner {
+    font-size: 2em;
+  }
+}
+@media (max-width: 450px) {
+  .main-banner,
+  .title-banner {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 375px) {
+  .main-banner,
+  .title-banner {
+    font-size: 1.25em;
+  }
+}
 .main-banner {
-  font-size: 3em;
   margin: 10px;
   text-align: center;
-}
-.title-banner {
-  font-size: 5em;
 }
 textarea {
   resize: none;
@@ -79,4 +101,22 @@ iframe {
 }
 .gmap {
   text-align: center;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.details-jt h3 {
+  font-size: 1.5em;
+}
+.details-jt p {
+  font-size: 1.25em;
+}
+@media (max-width: 600px) {
+  .details-jt h3 {
+    font-size: 1.25em;
+  }
+  .details-jt p {
+    font-size: 1em;
+  }
 }

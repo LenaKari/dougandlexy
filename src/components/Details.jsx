@@ -18,7 +18,7 @@ export default class Details extends React.Component {
           </div>
         </Row>
         <Row>
-          <Jumbotron>
+          <Jumbotron class="details-jt">
             <h3>Where and When</h3>
             <p>The wedding will take place on the 21st of October at Beechwood Hotel in Worcester, Massachusetts. The ceremony will begin at 5:30pm, immediately followed by the reception. Information about the venue can be found below.</p>
             <h3>Registry / Gifts</h3>

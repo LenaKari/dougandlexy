@@ -39,6 +39,8 @@ h1 {
 .content {
   margin-top: 60px;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .btn-default {
@@ -50,16 +52,16 @@ h1 {
 
 .main-banner, .title-banner {
   font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  @media(max-width: 767px) { font-size: 2.5em; }
+  @media(max-width: 550px) { font-size: 2em; }
+  @media(max-width: 450px) { font-size: 1.5em; }
+  @media(max-width: 375px) { font-size: 1.25em; }
 }
 
 .main-banner {
-  font-size: 3em;
   margin: 10px;
   text-align: center;
-}
-
-.title-banner {
-  font-size: 5em;
 }
 
 textarea {
@@ -83,4 +85,18 @@ iframe {
 
 .gmap {
   text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.details-jt {
+    h3 { font-size: 1.5em; }
+    p { font-size: 1.25em; }
+    @media(max-width: 600px) {
+        h3 { font-size: 1.25em; }
+        p { font-size: 1em; }
+    }
 }
