@@ -19,15 +19,15 @@ export default class RSVP extends React.Component {
             </div>
             <Jumbotron>
               <form method="post" action="https://getsimpleform.com/messages?form_api_token=ff3c091b5965d22a6e3b406fff833fb2">
-                  <input type='hidden' name='redirect_to' value='http://www.dougandlexy.com' />
+                <input type='hidden' name='redirect_to' value='http://www.dougandlexy.com' />
 
                 <div class="form-group">
                   <label for="nameInput">Your Name</label>
                   <input type="text" name="nameInput" id="nameInput" placeholder="Name" class="form-control"/>
                 </div>
                 <div class="form-group">
-                  <label for="guestInput">Guest</label>
-                  <input type="text" name="guestInput" id="guestInput" placeholder="Name of guest" class="form-control"/>
+                  <label for="guestInput">Guest(s)</label>
+                  <input type="text" name="guestInput" id="guestInput" placeholder="Name(s) of guest(s)" class="form-control"/>
                 </div>
                 <div class="radio">
                   <label>

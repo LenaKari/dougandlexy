@@ -13,7 +13,7 @@ export default class Home extends React.Component {
       <Grid>
         <Row>
           <div>
-            <p class="main-banner">Alexandria Sparks & Douglas Ray</p>
+            <p class="title-banner">Alexandria Sparks & Douglas Ray</p>
           </div>
           <Jumbotron>
             <Carousel>
