@@ -32,13 +32,13 @@ export default class Header extends React.Component {
           <div class={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li>
-                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Home</IndexLink>
+                <IndexLink to="/" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>Home</IndexLink>
               </li>
               <li>
-                <Link to="details" onClick={this.toggleCollapse.bind(this)}>Details</Link>
+                <Link to="details" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>Details</Link>
               </li>
               <li>
-                <Link to="rsvp" onClick={this.toggleCollapse.bind(this)}>RSVP</Link>
+                <Link to="rsvp" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>RSVP</Link>
               </li>
             </ul>
           </div>
