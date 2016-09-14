@@ -18,14 +18,16 @@ export default class RSVP extends React.Component {
               <p class="main-banner">RSVP</p>
             </div>
             <Jumbotron>
-              <form method="post" action="rsvp.php">
+              <form method="post" action="https://getsimpleform.com/messages?form_api_token=ff3c091b5965d22a6e3b406fff833fb2">
+                  <input type='hidden' name='redirect_to' value='<http://www.dougandlexy.com>' />
+
                 <div class="form-group">
                   <label for="nameInput">Your Name</label>
-                  <input type="text" id="nameInput" placeholder="Name" class="form-control"/>
+                  <input type="text" name="nameInput" id="nameInput" placeholder="Name" class="form-control"/>
                 </div>
                 <div class="form-group">
                   <label for="guestInput">Guest</label>
-                  <input type="text" id="guestInput" placeholder="Name of guest" class="form-control"/>
+                  <input type="text" name="guestInput" id="guestInput" placeholder="Name of guest" class="form-control"/>
                 </div>
                 <div class="radio">
                   <label>
@@ -36,12 +38,12 @@ export default class RSVP extends React.Component {
                 <div class="radio">
                   <label>
                     <input type="radio" id="declined" value="declined" name="rsvp-radio"/>
-                    Regretfully declines 
+                    Regretfully declines
                   </label>
                 </div>
                 <div class="form-group">
                   <label for="comments">Notes</label>
-                  <textarea id="comments" placeholder="Please let us know if you have any dietary needs or access requirements." class="form-control"></textarea>
+                  <textarea id="comments" name="comments" placeholder="Please let us know if you have any dietary needs or access requirements." class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
