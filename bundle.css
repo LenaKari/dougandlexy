@@ -26,6 +26,9 @@ h1 {
 .navbar-collapse {
   border: none;
 }
+.navbar-inverse {
+  border-color: #410000;
+}
 .content {
   margin-top: 75px;
   width: 100%;
