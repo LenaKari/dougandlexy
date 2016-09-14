@@ -12,25 +12,26 @@ export default class Home extends React.Component {
     return (
       <Grid>
         <Row>
+          <div>
+            <p class="main-banner">Alexandria Sparks & Douglas Ray</p>
+          </div>
           <Jumbotron>
             <Carousel>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="http://placehold.it/900x500"/>
+                <img width={900} height={500} alt="900x500" src="/src/img/1.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="http://placehold.it/900x500"/>
+                <img width={900} height={500} alt="900x500" src="/src/img/2.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="http://placehold.it/900x500"/>
+                <img width={900} height={500} alt="900x500" src="/src/img/3.jpg"/>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="http://placehold.it/900x500"/>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="http://placehold.it/900x500"/>
+                <img width={900} height={500} alt="900x500" src="/src/img/4.jpg"/>
               </Carousel.Item>
             </Carousel>
           </Jumbotron>
+          <p class="main-banner">Please join us on our special day...</p>
         </Row>
       </Grid>
     );

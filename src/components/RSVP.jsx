@@ -14,8 +14,8 @@ export default class RSVP extends React.Component {
       <Grid>
         <Row>
           <Col>
-            <div class="title-banner">
-              <h2>RSVP</h2>
+            <div>
+              <p class="main-banner">RSVP</p>
             </div>
             <Jumbotron>
               <form method="post" action="rsvp.php">
