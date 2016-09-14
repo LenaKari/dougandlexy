@@ -19,7 +19,7 @@ export default class RSVP extends React.Component {
             </div>
             <Jumbotron>
               <form method="post" action="https://getsimpleform.com/messages?form_api_token=ff3c091b5965d22a6e3b406fff833fb2">
-                  <input type='hidden' name='redirect_to' value='<http://www.dougandlexy.com>' />
+                  <input type='hidden' name='redirect_to' value='http://www.dougandlexy.com' />
 
                 <div class="form-group">
                   <label for="nameInput">Your Name</label>
