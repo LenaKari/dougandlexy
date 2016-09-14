@@ -5,6 +5,9 @@ body {
 h1 {
   margin: 100px;
 }
+.active {
+  background: #230000;
+}
 .navbar {
   background: #410000;
 }
