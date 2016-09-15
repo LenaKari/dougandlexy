@@ -120,17 +120,21 @@ img {
     padding: 15px;
   }
 }
-.details-jt h3 {
+.details-jt h3,
+.confirmation h3 {
   font-size: 1.5em;
 }
-.details-jt p {
+.details-jt p,
+.confirmation p {
   font-size: 1.25em;
 }
 @media (max-width: 600px) {
-  .details-jt h3 {
+  .details-jt h3,
+  .confirmation h3 {
     font-size: 1.25em;
   }
-  .details-jt p {
+  .details-jt p,
+  .confirmation p {
     font-size: 1em;
   }
 }
