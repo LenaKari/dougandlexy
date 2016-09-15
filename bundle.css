@@ -120,24 +120,32 @@ img {
     padding: 15px;
   }
 }
-.details-jt h3,
-.confirmation h3 {
+.details-jt h3 {
   font-size: 1.5em;
 }
-.details-jt p,
-.confirmation p {
+.details-jt p {
   font-size: 1.25em;
 }
 @media (max-width: 600px) {
-  .details-jt h3,
-  .confirmation h3 {
+  .details-jt h3 {
     font-size: 1.25em;
   }
-  .details-jt p,
-  .confirmation p {
+  .details-jt p {
     font-size: 1em;
   }
 }
 .confirmation h3 {
   font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+}
+.confirmation p {
+  font-size: 1.25em;
+}
+@media (max-width: 600px) {
+  .confirmation h3 {
+    font-size: 1.5em;
+  }
+  .confirmation p {
+    font-size: 1em;
+  }
 }
