@@ -4,12 +4,11 @@ import { Grid, Row, Col, Jumbotron } from 'react-bootstrap'
 export default class RSVP extends React.Component {
 	constructor(props) {
     super(props);
-    this.state = {
-      value: "",
-    };
+    this.state = {};
   }
-
+  
   render() {
+
 		return (
       <Grid>
         <Row>
@@ -19,7 +18,7 @@ export default class RSVP extends React.Component {
             </div>
             <Jumbotron>
               <form method="post" action="https://getsimpleform.com/messages?form_api_token=ff3c091b5965d22a6e3b406fff833fb2">
-                <input type='hidden' name='redirect_to' value='http://www.dougandlexy.com' />
+                <input type='hidden' name='redirect_to' value='http://www.dougandlexy.com/#confirmed' />
 
                 <div class="form-group">
                   <label for="nameInput">Your Name</label>

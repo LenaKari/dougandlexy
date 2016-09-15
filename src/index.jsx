@@ -5,6 +5,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Details from './components/Details'
 import RSVP from './components/RSVP'
+import Confirmation from './components/Confirmation'
 
 import 'styles/main'
 
@@ -16,6 +17,7 @@ ReactDOM.render((
       <IndexRoute component={Home}/>
       <Route path="/details" component={Details}/>
       <Route path="/rsvp" component={RSVP}/>      
+      <Route path="/confirmed" component={Confirmation}/>
     </Route>
   </Router>
 ), app)
