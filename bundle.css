@@ -137,13 +137,14 @@ img {
 .confirmation h3 {
   font-family: 'Dancing Script', cursive;
   font-size: 2em;
+  margin-bottom: 20px;
 }
 .confirmation p {
   font-size: 1.25em;
 }
 @media (max-width: 600px) {
   .confirmation h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   .confirmation p {
     font-size: 1em;

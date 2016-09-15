@@ -29,6 +29,9 @@ export default class Home extends React.Component {
               <Carousel.Item>
                 <img src="/src/img/4.jpg"/>
               </Carousel.Item>
+              <Carousel.Item>
+                <img src="/src/img/5.jpg"/>
+              </Carousel.Item>
             </Carousel>
           </Jumbotron>
           <p class="main-banner">Please join us on our special day...</p>
