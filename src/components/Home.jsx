@@ -4,16 +4,14 @@ import { Grid, Row, Col, Jumbotron, Carousel } from 'react-bootstrap'
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: "Home",
-    };
+    this.state = {};
   }
   render() {
     return (
       <Grid>
         <Row>
           <div>
-            <p class="title-banner">Alexandria Sparks & Douglas Ray</p>
+            <p class="title-banner">Mr. and Mrs. Ray!</p>
           </div>
           <Jumbotron>
             <Carousel>
@@ -26,15 +24,9 @@ export default class Home extends React.Component {
               <Carousel.Item>
                 <img src="/src/img/3.jpg"/>
               </Carousel.Item>
-              <Carousel.Item>
-                <img src="/src/img/4.jpg"/>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/src/img/5.jpg"/>
-              </Carousel.Item>
             </Carousel>
           </Jumbotron>
-          <p class="main-banner">Please join us on our special day...</p>
+          <p class="main-banner">Thanks again for joining us on our special day!</p>
         </Row>
       </Grid>
     );

@@ -9,18 +9,14 @@ export default class Header extends React.Component {
       collapsed: true,
     };
   }
-
   toggleCollapse() {
     const collapsed = !this.state.collapsed;
     this.setState({collapsed});
   }
-
-
   render() {
     const { location } = this.props;
     const { collapsed } = this.state;
     const navClass = collapsed ? "collapse" : "";
-
     return (
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -35,10 +31,7 @@ export default class Header extends React.Component {
                 <IndexLink to="/" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>Home</IndexLink>
               </li>
               <li>
-                <Link to="details" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>Details</Link>
-              </li>
-              <li>
-                <Link to="rsvp" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>RSVP</Link>
+                <Link to="photos" activeClassName="active" onClick={this.toggleCollapse.bind(this)}>Photos</Link>
               </li>
             </ul>
           </div>

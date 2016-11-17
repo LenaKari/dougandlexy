@@ -22,23 +22,30 @@ const config = {
     extensions: ['', '.js', '.jsx', '.es6', '.less'],
     root: [path.join(__dirname, './src')]
   },
-  module : {
+  module: {
     loaders: [
-      { test: /\.jsx$|\.es6$|\.js$/, loaders: ['react-hot', 'babel-loader'], exclude: /node_modules/ },
-      { test: /\.less$/, loader: ExtractTextPlugin.extract('style-loader', lessLoaders.join('!')) }
+      {
+        test: /\.js|.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0'],
+          plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
+        }
+      },
+      {
+        test: /\.less$/,
+        loader: ExtractTextPlugin.extract('style-loader', lessLoaders.join('!'))
+      }
     ]
   },
-   plugins: process.env.NODE_ENV === 'production' ? [
+  plugins: [
     new ExtractTextPlugin('[name].css'),
+    new webpack.NoErrorsPlugin(),
+    new webpack.OldWatchingPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new webpack.OldWatchingPlugin()
-  ] : [
-    new ExtractTextPlugin('[name].css'),
-    new webpack.NoErrorsPlugin(),
-    new webpack.OldWatchingPlugin()
+    new webpack.optimize.UglifyJsPlugin()
   ],
   postcss: [
     autoprefixer({

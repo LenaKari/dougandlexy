@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import Details from './components/Details'
-import RSVP from './components/RSVP'
+import EmailForm from './components/EmailForm'
 import Confirmation from './components/Confirmation'
 
 import 'styles/main'
@@ -15,8 +14,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={Home}/>
-      <Route path="/details" component={Details}/>
-      <Route path="/rsvp" component={RSVP}/>      
+      <Route path="/photos" component={EmailForm}/>
       <Route path="/confirmed" component={Confirmation}/>
     </Route>
   </Router>

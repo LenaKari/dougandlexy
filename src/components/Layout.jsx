@@ -3,8 +3,7 @@ import { IndexLink } from 'react-router'
 import { Grid, Row, Col } from 'react-bootstrap'
 import Header from './Header'
 import Home from './Home'
-import Details from './Details'
-import RSVP from './RSVP'
+import EmailForm from './EmailForm'
 
 export default class Layout extends React.Component {
   render() {
